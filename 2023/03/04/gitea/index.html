@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Title -->
+<title>Hexo</title>
+
+<!-- Icon -->
+<link rel="icon" href="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg">
+
+<!-- Fonts -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" as="style" onload="this.onload=null, this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"></noscript>
+
+
+
+<!-- Style -->
+
+<link rel="stylesheet" href="/styles/main.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-theme-pure@1.0.1/dist/main.css"> -->
+
+
+
+
+
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div class="main gt-bg-theme-color-first">
+            <div class="main-content">
+                <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="/">
+        <img class="user-avatar" src="https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Hexo
+        </div>
+    </a>
+    <button aria-label="Navbar Toggler" class="navbar-toggler" type="button" id="changeNavbar">
+        <i class="gt-c-content-color-first" style="font-size: 18px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="18px" fill="currentColor">
+                <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+            </svg>
+        </i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center; ">
+            
+                <div class="nav-item">
+                    <a href="/" class="menu gt-a-link" target="_self">首页</a>
+                </div>
+            
+                <div class="nav-item">
+                    <a href="/archives/" class="menu gt-a-link" target="_self">归档</a>
+                </div>
+            
+                <div class="nav-item">
+                    <a href="/tags/" class="menu gt-a-link" target="_self">标签</a>
+                </div>
+            
+                <div class="nav-item">
+                    <a href="/friends/" class="menu gt-a-link" target="_self">友链</a>
+                </div>
+            
+        </div>
+    </div>
+</nav>
+
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function() {
+        let element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else { 
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+                <div class="post-container">
+    <div class="post-detail gt-bg-theme-color-second gt-c-content-color-first">
+        <article class="gt-post-content">
+            <h1 class="post-title">(无标题)</h1>
+            <div class="post-info">
+                <time class="post-time gt-c-content-color-first">
+                    · 2023-03-04 ·</time>
+                
+                    
+                
+            </div>
+            <hr>
+            <div class="post-content gt-c-content-color-first">
+                <h1 id="git-gitea-jenkins"><a href="#git-gitea-jenkins" class="headerlink" title="git+gitea+jenkins"></a>git+gitea+jenkins</h1><p>参考文档：<a target="_blank" rel="noopener" href="https://blog.csdn.net/tianmingqing0806/article/details/125408239">https://blog.csdn.net/tianmingqing0806/article/details/125408239</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">OpenJDK采用GPL V2协议放出，而Oracle JDK则采用JRL放出。 两者协议虽然都是开放源代码的，但是在使用上的不同在于GPL V2允许在商业上使用，而JRL只允许个人研究使用。</span><br><span class="line"></span><br><span class="line">所以，如果小伙伴们如果你的项目自己玩，两者差不多，Oracle JDK由专业的公司维护更稳定一些。如果你的项目准备商用，建议使用OpenJDK，可以避免法律上的纠纷。并且两个功能差不多，但是从一个切到另一个还是需要测试，所以尽量一开始就选择自己需要的版本。</span><br><span class="line"></span><br><span class="line">在本篇教程中，您将使用apt安装OpenJDK 11版本的Java Runtime Environment（JRE）和Java Developer Kit（JDK）</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install openjdk-11-jre-headless</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">安装git</span><br><span class="line">yum -y install git</span><br><span class="line"></span><br><span class="line">安装sqlite3</span><br><span class="line">linux上一般都是自带有sqlite3数据库，如果没有可自行安装</span><br><span class="line">执行命令   sqlite3</span><br><span class="line"></span><br><span class="line">下载 gitea得地址</span><br><span class="line">wget https://dl.gitea.io/gitea/1.15.8/gitea-1.15.8-linux-amd64</span><br><span class="line">修改执行权限</span><br><span class="line">chmod 777 gitea-1.15.8-linux-amd64</span><br><span class="line">启动 gitea-server</span><br><span class="line">./gitea-1.15.8-linux-amd64 web</span><br><span class="line">后台运行gitea-server</span><br><span class="line">nohup ./gitea-1.15.8-linux-amd64 web &amp;</span><br><span class="line">gitea 配置</span><br><span class="line">   浏览器访问 http://ip:3000 根据引导配置信息</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建一个目录用于存放gitea和git数据的目录"><a href="#创建一个目录用于存放gitea和git数据的目录" class="headerlink" title="创建一个目录用于存放gitea和git数据的目录"></a><strong>创建一个目录用于存放gitea和git数据的目录</strong></h3><p>我自己是放在&#x2F;git里面，大家看着改。</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /<span class="keyword">data</span>/git</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加Git用户"><a href="#添加Git用户" class="headerlink" title="添加Git用户"></a><strong>添加Git用户</strong></h3><p>用来运行gitea，后面创建的service也是通过这个用户运行，还有密钥那些东西不会和root之类的用户搞混。</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">groupadd git</span><br><span class="line"></span><br><span class="line">useradd git <span class="literal">-g</span> git </span><br></pre></td></tr></table></figure>
+
+<p>下载安装包：<a target="_blank" rel="noopener" href="https://dl.gitea.io/gitea">https://dl.gitea.io/gitea</a></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 去到你要安装的目录</span></span><br><span class="line"><span class="built_in">cd</span> /git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载</span></span><br><span class="line"><span class="built_in">wget</span> <span class="literal">-O</span> gitea https://dl.gitea.io/gitea/<span class="number">1.17</span>.<span class="number">3</span>/gitea<span class="literal">-1</span>.<span class="number">17.3</span><span class="literal">-linux-amd64</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置成可运行文件</span></span><br><span class="line">chmod +x gitea</span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试运行</span></span><br><span class="line">./gitea web</span><br></pre></td></tr></table></figure>
+
+<p>运行成功的话，别退出测试下<code>[ip]:3000</code>是否可以访问，云服务器的话去设置下安全策略开放3000端口。</p>
+<p>或者本身服务器开了防火墙的</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看是不是没有开放3000端口</span></span><br><span class="line">firewall<span class="literal">-cmd</span> <span class="literal">--zone</span>=public <span class="literal">--list-ports</span></span><br><span class="line"><span class="comment"># 如果没有就添加一个</span></span><br><span class="line">firewall<span class="literal">-cmd</span> <span class="literal">--zone</span>=public <span class="literal">--add-port</span>=<span class="number">3000</span>/tcp <span class="literal">--permanent</span></span><br><span class="line"><span class="comment"># 重新载入配置文件</span></span><br><span class="line">firewall<span class="literal">-cmd</span> <span class="literal">--reload</span></span><br><span class="line"></span><br><span class="line">vi /etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line">注释掉这一行，没有注释意思是只运行本地连接</span><br><span class="line"><span class="comment">#bind-address            = 127.0.0.1</span></span><br></pre></td></tr></table></figure>
+
+<p>没问题就直接退出gitea程序，继续下面的操作。</p>
+<h3 id="更换目录的用户"><a href="#更换目录的用户" class="headerlink" title="更换目录的用户"></a>更换目录的用户</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown <span class="literal">-R</span> git:git /git</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置service"><a href="#配置service" class="headerlink" title="配置service"></a><strong>配置service</strong></h3><p>然后就可以很爽的用：systemctl控制了</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/systemd/system/gitea.service</span><br></pre></td></tr></table></figure>
+
+<p>官方有提供了一份services配置文件：<a href="https://link.zhihu.com/?target=https://github.com/go-gitea/gitea/blob/master/contrib/systemd/gitea.service">gitea&#x2F;gitea.service at master · go-gitea&#x2F;gitea (github.com)</a></p>
+<p>注意：</p>
+<ul>
+<li>WorkingDirectory配置项是工作路径得是存在且是git有权限的目录，如果不想太麻烦，可以删除…</li>
+</ul>
+<p><strong>懒人版请直接复制下面的</strong>（从头到尾和我一样的目录的）</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> &gt; /etc/systemd/system/gitea.service &lt;&lt;EOF</span><br><span class="line">[<span class="type">Unit</span>]</span><br><span class="line">Description=Gitea</span><br><span class="line">After=syslog.target</span><br><span class="line">After=network.target</span><br><span class="line"></span><br><span class="line">[<span class="type">Service</span>]</span><br><span class="line">RestartSec=<span class="number">2</span>s</span><br><span class="line"><span class="built_in">Type</span>=simple</span><br><span class="line">User=git</span><br><span class="line"><span class="built_in">Group</span>=git</span><br><span class="line">ExecStart=/<span class="keyword">data</span>/git/gitea web <span class="literal">--config</span> /<span class="keyword">data</span>/git/custom/conf/app.ini</span><br><span class="line">Restart=always</span><br><span class="line"></span><br><span class="line">[<span class="type">Install</span>]</span><br><span class="line">WantedBy=multi<span class="literal">-user</span>.target</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<p>启动服务和设置开机启动</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start gitea &amp;&amp; systemctl enable gitea</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="mysql安装"><a href="#mysql安装" class="headerlink" title="mysql安装"></a>mysql安装</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">apt install mysql-server -y  #ubuntu安装</span><br><span class="line">mysql -uroot -p #进入mysql</span><br><span class="line"></span><br><span class="line">#修改密码</span><br><span class="line">alter user root@localhost identified by &#x27;123456&#x27;;</span><br><span class="line">#刷新</span><br><span class="line">FLUSH PRIVILEGES;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">CREATE USER &#x27;gitea&#x27;@&#x27;%&#x27; IDENTIFIED BY &#x27;gitea&#x27;;</span><br><span class="line">CREATE DATABASE giteadb CHARACTER SET &#x27;utf8mb4&#x27; COLLATE &#x27;utf8mb4_unicode_ci&#x27;;</span><br><span class="line">GRANT ALL PRIVILEGES ON giteadb.* TO &#x27;gitea&#x27;@&#x27;%&#x27;;</span><br><span class="line"></span><br><span class="line">FLUSH PRIVILEGES;</span><br></pre></td></tr></table></figure>
+
+<p>报错：无法运行时</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /var/log/syslog |grep gitea</span><br><span class="line">权限不足</span><br><span class="line">chmod 777 /home/git</span><br></pre></td></tr></table></figure>
+
+<p>然后在自己电脑浏览器打开[ip]:3000，点击登陆初始化设置，我这边给它设置了域名和端口，所以访问变成[域名]:[端口号]，完成。</p>
+<p><img src="https://lian-typora.oss-cn-hangzhou.aliyuncs.com/typora/2023/03/03/2023:03:03-16:12:16:132.png" alt="image-20221025150250217"></p>
+<h3 id="nginx代理"><a href="#nginx代理" class="headerlink" title="nginx代理"></a><strong>nginx代理</strong></h3><p>因为我们80端口都是给nginx用了，3000端口不想报漏在外面（主要是看着域名后面跟着端口号好难受），我们给他做一下nginx代理 找到nginx的配置文件目录，添加一个网站配置文件,如果要ssl的自己添加就行了，改完修改下<code>app.ini</code>的<code>ROOT_URL</code>重启一下gitea，nginx重载下配置文件</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">    listen       <span class="number">80</span>;</span><br><span class="line">    server_name  [域名]</span><br><span class="line">&#125;</span><br><span class="line">location / &#123;</span><br><span class="line">    proxy_set_header Host <span class="variable">$host</span>;</span><br><span class="line">    proxy_set_header X<span class="literal">-Real-IP</span> <span class="variable">$remote_addr</span>;</span><br><span class="line">    proxy_set_header X<span class="literal">-Forwarded-For</span> <span class="variable">$proxy_add_x_forwarded_for</span>;</span><br><span class="line">    proxy_pass    http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">3000</span>;</span><br><span class="line">&#125;</span><br><span class="line">location ~ .*\.(js|css|png)<span class="variable">$</span> &#123;</span><br><span class="line">    proxy_pass  http://<span class="number">127.0</span>.<span class="number">0.1</span>:<span class="number">3000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置SSH密钥"><a href="#配置SSH密钥" class="headerlink" title="配置SSH密钥"></a>配置SSH密钥</h3><blockquote>
+<p>作用：这些 SSH 公钥已经关联到你的账号。相应的私钥拥有完全操作你的仓库的权限。</p>
+</blockquote>
+<p>github写的ssh密钥操作：</p>
+<p>首先<a href="https://link.zhihu.com/?target=https://docs.github.com/cn/github/authenticating-to-github/checking-for-existing-ssh-keys">检查现有 SSH 密钥 - GitHub Docs</a></p>
+<p>如果没有ssh密钥<a href="https://link.zhihu.com/?target=https://docs.github.com/cn/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">生成新 SSH 密钥并添加到 ssh-agent - GitHub Docs</a></p>
+<p>然后：登陆-&gt;点击右上角的头像-&gt;设置-&gt;SSH&#x2F;GPG密钥-&gt;增加密钥（就是刚刚生成文件中的<code>.pub</code>文件）</p>
+<p>可以在你自己电脑输入命令可以查看</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 如果你刚刚 使用ssh-keygen生成密钥的时候-t参数有填写 那么下面命令的rsa换成你自己的参数</span></span><br><span class="line"><span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>然后在自己电脑激活一下完成</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt; </span><span class="language-bash">ssh git@[你gitea域名或者ip]</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">显示下面文字就成功了</span></span><br><span class="line">PTY allocation request failed on channel 0</span><br><span class="line">Hi there, 你的gitea名字! You&#x27;ve successfully authenticated with the key named mac, but Gitea does not provide shell access.</span><br><span class="line">If this is unexpected, please log in with password and setup Gitea under another user.</span><br><span class="line">Connection to [你gitea域名或者ip] closed.</span><br></pre></td></tr></table></figure>
+
+<h2 id="Jenkins安装"><a href="#Jenkins安装" class="headerlink" title="Jenkins安装"></a>Jenkins安装</h2><h3 id="配置源"><a href="#配置源" class="headerlink" title="配置源"></a>配置源</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install --reinstall ca-certificates</span><br><span class="line">wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -</span><br><span class="line">sudo sh -c &#x27;echo deb http://pkg.jenkins.io/debian-stable binary/ &gt; /etc/apt/sources.list.d/jenkins.list&#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新源"><a href="#更新源" class="headerlink" title="更新源"></a>更新源</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt<span class="operator">-</span><span class="keyword">get</span> <span class="operator">-</span>y <span class="keyword">update</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>这一步会可能会报错，Could not connect to pkg.jenkins.io:80 (146.75.114.133), connection timed out [IP: 146.75.114.133 80</p>
+<p>不要紧，多执行几次，反复试，总有一次能成功，我也是搞了好几次才OK</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt<span class="operator">-</span><span class="keyword">get</span> install jenkins</span><br></pre></td></tr></table></figure>
+
+<p>默认端口是8080，通过<a target="_blank" rel="noopener" href="http://ip:8080/%E8%AE%BF%E9%97%AE">http://ip:8080/访问</a></p>
+<p>管理员默认密码地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /var/lib/jenkins/secrets/initialAdminPassword</span><br></pre></td></tr></table></figure>
+
+<p>修改默认端口</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">检查 /etc/init.d/jenkins 脚本，修改 do_start 函数的 check_tcp_port 命令，端口号从 8080 换成 8848：</span><br><span class="line">修改 /etc/default/jenkins 文件，将端口 8080 改成 8848</span><br><span class="line">修改 /usr/lib/systemd/system/jenkins.service，将8080改成8848，并将user,group修改为root</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://lian-typora.oss-cn-hangzhou.aliyuncs.com/typora/2023/03/03/2023:03:03-16:12:21:267.png" alt="img"></p>
+<p>重启Jenkins</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 由于修改了配置，这一步必须要做</span></span><br><span class="line">systemctl daemon-reload &amp;&amp; systemctl restart jenkins</span><br></pre></td></tr></table></figure>
+
+<h3 id="卸载Jenkins（APT）"><a href="#卸载Jenkins（APT）" class="headerlink" title="卸载Jenkins（APT）"></a>卸载Jenkins（APT）</h3><p>&#x2F;&#x2F;服务</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove jenkins</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F;安装包，注意这里如果不是ubuntu那就yum</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove --auto-remove jenkins</span><br></pre></td></tr></table></figure>
+
+<p>&#x2F;&#x2F;配置和数据</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get purge jenkins</span><br><span class="line"></span><br><span class="line">sudo apt-get purge --auto-remove jenkins</span><br></pre></td></tr></table></figure>
+
+<h3 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h3><blockquote>
+<p>Publish Over SSH: Publish Over SSH | Jenkins plugin</p>
+<p>注：用于分布式环境，Jenkins构建成功后，发送服务器ssh请求</p>
+<p>PostBuildScript ：PostBuildScript | Jenkins plugin</p>
+<p>注：用于Jenkins构建后，根据结果，执行shell脚本，可用于集群服务器</p>
+<p>注：如果是集群环境，在在统一内网，推荐使用PostBuildScript</p>
+<p><strong>Jenkins的插件安装，在插件管理中安装Generic Webhook Trigger用于gitea构建触发器，Blue Ocean可以理解为Jenkins的一个皮肤（个人感觉界面看起来和操作使用很舒服）</strong></p>
+</blockquote>
+<h3 id="配置JDK"><a href="#配置JDK" class="headerlink" title="配置JDK"></a>配置JDK</h3><p>JDK版本可以与Jenkins运行环境不一致，比如我安装Jenkins运行环境是java11，但是这里配置的是java8,因为我的项目打包编译环境是java8</p>
+<p><img src="https://lian-typora.oss-cn-hangzhou.aliyuncs.com/typora/2023/03/03/2023:03:03-16:12:25:939.png" alt="img"></p>
+<h3 id="配置GIT仓库"><a href="#配置GIT仓库" class="headerlink" title="配置GIT仓库"></a>配置GIT仓库</h3><p>和构建历史丢弃策略，我这里配置的是构建历史只保留7天，且只保留7个历史构建</p>
+<p><img src="https://lian-typora.oss-cn-hangzhou.aliyuncs.com/typora/2023/03/03/2023:03:03-16:12:30:556.png" alt="img"></p>
+
+            </div>
+        </article>
+    </div>
+    <br>
+    
+        <div class="next-prev-post">
+            
+            
+                <div class="next-post">
+                    <div class="next gt-c-content-color-first">
+                        下一篇：<a href="/2023/03/04/hello-world/" 
+                            class="post-title gt-a-link">Hello World</a>
+                    </div>
+                </div>
+            
+        </div>
+    
+    
+
+    
+
+    
+</div>
+
+                <div class="site-footer gt-c-content-color-first">
+    <div class="footer-main">
+        <!-- 建议保留版权信息或者添加主题信息到友链，感谢您的理解 -->
+        <!-- 文件位置：layout/_includes/footer.ejs -->
+        <span style="text-align: right; float: right;">Theme <a 
+            href="https://github.com/renbaoshuo/hexo-theme-pure" target="_blank">Pure</a> | Powered by <a 
+            href="https://hexo.io" target="_blank">Hexo</a></span>
+        <span style="text-align: left;">Footer HTML
+</span>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </body>
+</html>
